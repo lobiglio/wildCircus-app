@@ -19,6 +19,7 @@ header {
   }
   h2 {
     font-size: 1.8m;
+    color: $orange;
   }
 }
 
@@ -65,8 +66,8 @@ section {
 }
 
 .presentation-artist {
-  color: $gold;
-  text-shadow: 1px 1px 1px $red;
+  color: $red;
+  text-shadow: 1px 1px 1px $gold;
   margin-bottom: 1em;
   font-size: 2.5em;
 }
@@ -174,6 +175,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2em;
   img {
     width: 15em;
     height: 11em;

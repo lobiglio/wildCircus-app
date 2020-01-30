@@ -1,0 +1,24 @@
+@import "../../shared/variables.scss";
+
+footer {
+  background-color: $gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+  color: $red;
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 2em;
+  }
+  i {
+    font-size: 1.3em;
+  }
+  i:hover {
+    color: $orange;
+  }
+  h3:hover {
+    color: $orange;
+  }
+}
