@@ -1,0 +1,22 @@
+@import "../../shared/variables.scss";
+
+header {
+  background-image: url('../../../assets/images/header.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $light;
+  text-shadow: 1px 1px 1px $red;
+  h1 {
+    font-size: 4.5em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 1.8m;
+  }
+}
