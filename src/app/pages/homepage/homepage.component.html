@@ -1,0 +1,86 @@
+<header>
+  <h1>Wild Circus</h1>
+  <h2>Un cirque sans animaux, c'est encore plus magique.</h2>
+</header>
+
+<div class="main-container">
+  <!-- Caroussel -->
+  <div class="carousel-container">
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../../assets/images/caroussel1.jpeg" class="d-block w-100" alt="picture of circus light">
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/images/caroussel2.jpeg" class="d-block w-100" alt="fire dancer">
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/images/caroussel3.jpeg" class="d-block w-100" alt="circus scene">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Artistes -->
+  <section>
+    <h1>L'artiste du moment</h1>
+    <div class="artist-moment">
+      <img src="{{artistsByVote[0].imgUrl}}" alt="picture of the best artist">
+      <h2> {{artistsByVote[0].name}} </h2>
+    </div>
+    <h2 class="presentation-artist">Et bien d'autres encores...</h2>
+    <div class="artists">
+      <div class="artist" *ngFor="let artist of artists">
+        <img src="{{artist.imgUrl}}" alt="picture of the artist">
+        <h2> {{artist.name}} </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partie CTA -->
+  <div class="cta">
+    <iframe src="https://www.youtube.com/embed/T3puuS05pzg" frameborder="0" allow="accelerometer;
+      autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen>
+    </iframe>
+    <div>
+      <a mat-raised-button>Réservez maintenant</a>
+    </div>
+  </div>
+
+  <!-- Partie pétition -->
+  <div class="petition">
+    <img src="../../../assets/images/petition.jpeg" alt="pen">
+    <div>
+      <h2>Signez notre pétition pour l'interdiction des animaux dans les cirques en France</h2>
+      <div class="signature">
+        <h3>Déjà {{petitions.length}} signatures récoltées!</h3>
+        <button mat-raised-button *ngIf="showButton" (click)="accessForm()">Signez</button>
+        <form [formGroup]="petitionForm" (ngSubmit)="onSubmit()" *ngIf="showForm">
+          <mat-form-field class="form-field">
+            <input matInput placeholder="Votre prénom" formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field class="form-field">
+            <input matInput placeholder="Votre nom de famille" formControlName="lastName">
+          </mat-form-field>
+          <button mat-raised-button type="submit">Validez</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- partie Livre d'or -->
+  <div class="livre-dor">
+    <img src="../../../assets/images/goldenbook.jpeg" alt="Golden book">
+    <div>
+      <h2>Vous avez vu notre spectacle? </h2>
+      <h2>Nous serions ravis de savoir ce que vous en avez pensé.</h2>
+    </div>
+    <div>
+      <button mat-raised-button>Livre d'or</button>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<app-footer></app-footer>
