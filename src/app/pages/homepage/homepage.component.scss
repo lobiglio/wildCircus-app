@@ -106,6 +106,19 @@ section {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2em;
+  a {
+    color: $red;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px $light;
+    background-color: $gold;
+    padding: 1em;
+  }
+  a:hover {
+    color: $red;
+    box-shadow: 1px 1px 1px $red;
+    border: 1px solid $red;
+  }
 }
 
 iframe {
@@ -113,25 +126,27 @@ iframe {
   height: 13em;
 }
 
-a {
-  color: $red;
-  font-weight: bold;
-  font-size: 2.5em;
-  text-shadow: 1px 1px 1px $light;
-  background-color: $gold;
-  padding: 1em;
-}
-
-a:hover {
-  color: $red;
-  box-shadow: 1px 1px 1px $red;
-  border: 1px solid $red;
-}
 
 // Partie pétition
+.petition {
+  margin-bottom: 2em;
+}
+
 h2 {
-  font-weight: bold;
-  color: $gold;
-  text-shadow: 1px 1px 1px $red;
-  font-size: 2.5em;
+  color: $red;
+  text-shadow: 1px 1px 1px $gold;
+  font-size: 2.3em;
+}
+
+i {
+  color: $red;
+  font-size: 4em;
+}
+
+.text-petition {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $red;
+  text-shadow: 1px 1px 1px $gold;
 }
