@@ -12,6 +12,7 @@ header {
   flex-direction: column;
   color: $light;
   text-shadow: 1px 1px 1px $red;
+  margin-bottom: 2em;
   h1 {
     font-size: 4.5em;
     margin-bottom: 0;
@@ -20,3 +21,16 @@ header {
     font-size: 1.8m;
   }
 }
+
+// Caroussel
+.carousel-container {
+  width:70%;
+  margin: 0 auto;
+  img {
+    height: 22em;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
+
+
