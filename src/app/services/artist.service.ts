@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class ArtistService {
 
-  static URL = 'http://localhost:3000/';
+  static URL = 'http://localhost:3000/artists';
 
   constructor(private http: HttpClient) { }
 
