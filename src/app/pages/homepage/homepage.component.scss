@@ -100,4 +100,38 @@ section {
   }
 }
 
+// Partie CTA
+.cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2em;
+}
 
+iframe {
+  width: 26em;
+  height: 13em;
+}
+
+a {
+  color: $red;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 1px $light;
+  background-color: $gold;
+  padding: 1em;
+}
+
+a:hover {
+  color: $red;
+  box-shadow: 1px 1px 1px $red;
+  border: 1px solid $red;
+}
+
+// Partie pétition
+h2 {
+  font-weight: bold;
+  color: $gold;
+  text-shadow: 1px 1px 1px $red;
+  font-size: 2.5em;
+}
