@@ -21,4 +21,8 @@ export class PetitionService {
   private convertDataFromServerToPetitions(petitions: any[]): Petition[] {
     return petitions.map(petition => new Petition(petition));
   }
+
+  public create(petition: Petition): Observable<any> {
+    return this.http.post(PetitionService.URL, petition);
+  }
 }

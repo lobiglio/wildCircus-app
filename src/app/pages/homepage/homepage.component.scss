@@ -135,12 +135,13 @@ iframe {
 h2 {
   color: $red;
   text-shadow: 1px 1px 1px $gold;
-  font-size: 2.3em;
+  // font-size: 2.3em;
+  margin-bottom: 0.5em;
 }
 
 i {
   color: $red;
-  font-size: 4em;
+  font-size: 6em;
 }
 
 .text-petition {
@@ -149,4 +150,19 @@ i {
   align-items: center;
   color: $red;
   text-shadow: 1px 1px 1px $gold;
+}
+
+.signature {
+  display: flex;
+  button {
+    margin-left: 2em;
+    background-color: $gold;
+    color: $red;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px $light;
+  }
+}
+
+.example-full-width {
+  width: 100%;
 }
