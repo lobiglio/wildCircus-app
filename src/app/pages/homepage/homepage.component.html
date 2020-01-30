@@ -56,12 +56,12 @@
         <h2>Signez notre pétition pour l'interdiction des animaux dans les cirques en France</h2>
         <div class="signature">
           <h3>Déjà {{petitions.length}} signatures récoltées!</h3>
-          <button mat-raised-button *ngIf="showButton">Signez</button>
+          <button mat-raised-button *ngIf="showButton" (click)="accessForm()">Signez</button>
           <form [formGroup]="petitionForm" (ngSubmit)="onSubmit()" *ngIf="showForm">
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="form-field">
               <input matInput placeholder="Votre prénom" formControlName="firstName">
             </mat-form-field>
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="form-field">
               <input matInput placeholder="Votre nom de famille" formControlName="lastName">
             </mat-form-field>
             <button mat-raised-button type="submit">Validez</button>

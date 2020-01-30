@@ -40,6 +40,11 @@ export class HomepageComponent implements OnInit {
     });
   }
 
+  accessForm() {
+    this.showButton = false;
+    this.showForm = true;
+  }
+
   onSubmit() {
     this.newPetition.firstName = this.petitionForm.get('firstName').value;
     this.newPetition.lastName = this.petitionForm.get('lastName').value;
@@ -48,5 +53,7 @@ export class HomepageComponent implements OnInit {
         this.petitions = petitions;
       });
     });
+    this.showButton = true;
+    this.showForm = false;
   }
 }
