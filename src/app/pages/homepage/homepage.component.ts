@@ -11,9 +11,9 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-  artists: Artist[];
-  artistsByVote: Artist[];
-  petitions: Petition[];
+  artists: Artist[] = [];
+  artistsByVote: Artist[] = [];
+  petitions: Petition[] = [];
   petitionForm = this.fb.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required]

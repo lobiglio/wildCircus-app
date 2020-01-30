@@ -105,7 +105,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   a {
     color: $red;
     font-weight: bold;
@@ -129,7 +129,21 @@ iframe {
 
 // Partie pétition
 .petition {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $red;
+  text-shadow: 1px 1px 1px $gold;
+  img {
+    width: 15em;
+    height: 11em;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px $red;
+    border: 1px solid $red;
+    margin-right: 2em;
+  }
 }
 
 h2 {
@@ -139,30 +153,37 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-i {
-  color: $red;
-  font-size: 6em;
-}
-
-.text-petition {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  color: $red;
-  text-shadow: 1px 1px 1px $gold;
-}
-
 .signature {
   display: flex;
-  button {
-    margin-left: 2em;
-    background-color: $gold;
-    color: $red;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px $light;
-  }
 }
+
+    button {
+      margin-left: 2em;
+      background-color: $gold;
+      color: $red;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px $light;
+    }
 
 .form-field {
   margin: 0 2em;
+}
+
+// Partie livred'or
+.livre-dor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 15em;
+    height: 11em;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px $gold;
+    border: 1px solid $gold;
+  }
+  h2 {
+    color: $gold;
+    text-shadow: 1px 1px 1px $red;
+  }
 }
