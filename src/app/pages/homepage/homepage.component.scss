@@ -57,11 +57,19 @@ section {
     object-fit: cover;
     margin-bottom: 1em;
   }
+  img:hover {
+    box-shadow: 3px 3px 3px $orange;
+    border: 1px solid $orange;
+
+  }
   h2 {
     font-weight: bold;
     color: $gold;
     text-shadow: 1px 1px 1px $red;
     font-size: 2.5em;
+  }
+  h2:hover {
+    color: $orange;
   }
 }
 
@@ -116,9 +124,8 @@ section {
     padding: 1em;
   }
   a:hover {
-    color: $red;
-    box-shadow: 1px 1px 1px $red;
-    border: 1px solid $red;
+    color: $orange;
+    box-shadow: 1px 1px 1px $orange;
   }
 }
 
@@ -158,13 +165,18 @@ h2 {
   display: flex;
 }
 
-    button {
-      margin-left: 2em;
-      background-color: $gold;
-      color: $red;
-      font-weight: bold;
-      text-shadow: 1px 1px 1px $light;
-    }
+button {
+  margin-left: 2em;
+  background-color: $gold;
+  color: $red;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px $light;
+}
+
+button:hover {
+  color: $orange;
+}
 
 .form-field {
   margin: 0 2em;
@@ -186,6 +198,6 @@ h2 {
   }
   h2 {
     color: $gold;
-    text-shadow: 1px 1px 1px $red;
+    text-shadow: 1px 1px 1px $orange;
   }
 }
