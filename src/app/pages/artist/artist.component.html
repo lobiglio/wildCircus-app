@@ -12,5 +12,25 @@
       <button class="vote"> {{bestArtist.nbVote}} votes</button>
     </div>
   </div>
+  <h2>Cliques sur un artiste pour en savoir plus</h2>
+  <div class="artists">
+    <div class="artist" *ngFor="let artist of artists; let i = index">
+      <img src="{{artist.imgUrl}}" alt="picture of the artist" (click)="artistCliqued(artist)">
+      <h2 (click)="artistCliqued(artist)"> {{artist.name}} </h2>
+    </div>
+  </div>
+  <div class="show-artist" *ngIf="showArtist">
+    <div class="artist">
+      <img src="{{showArtist.imgUrl}}" alt="picture of the artist">
+      <h2> {{showArtist.name}} </h2>
+    </div>
+    <div class="best-description">
+      <h4> {{showArtist.description}} </h4>
+      <h4><strong>{{showArtist.nbVote}} votes</strong></h4>
+    </div>
+    <div class="btn-vote">
+      <button class="vote" (click)="addVote()">Votez pour lui</button>
+    </div>
+  </div>
 </div>
 <app-footer></app-footer>
