@@ -24,15 +24,12 @@
   <!-- Artistes -->
   <section>
     <h1>L'artiste du moment</h1>
-    <div class="artist-moment">
-      <img src="{{artistsByVote[0].imgUrl}}" alt="picture of the best artist">
-      <h2> {{artistsByVote[0].name}} </h2>
-    </div>
+    <app-best-artist [artist]="bestArtist" (click)="redirectToArtists()"></app-best-artist>
     <h2 class="presentation-artist">Et bien d'autres encores...</h2>
     <div class="artists">
       <div class="artist" *ngFor="let artist of artists">
-        <img src="{{artist.imgUrl}}" alt="picture of the artist">
-        <h2> {{artist.name}} </h2>
+        <img src="{{artist.imgUrl}}" alt="picture of the artist" (click)="redirectToArtists()">
+        <h2 (click)="redirectToArtists()"> {{artist.name}} </h2>
       </div>
     </div>
   </section>

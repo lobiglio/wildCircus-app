@@ -1,0 +1,25 @@
+@import "../../shared/variables.scss";
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8em 0;
+  background-color: $red;
+  margin-bottom: 2em;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+a {
+  font-weight: bold;
+  color: $light;
+}
+
+.router-link-active {
+  text-shadow: 1px 1px 1px $orange;
+}
+

@@ -35,4 +35,9 @@ export class ArtistService {
       .get(ArtistService.URL + '/' + id)
       .pipe(map((artist: Artist) => new Artist(artist)));
   }
+
+  public update(artist: Artist): Observable<any> {
+    return this.http
+      .put(ArtistService.URL + '/' + artist.id, artist);
+  }
 }
