@@ -11,13 +11,15 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { ArtistComponent } from './pages/artist/artist.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     FooterComponent,
-    ArtistComponent
+    ArtistComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
