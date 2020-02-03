@@ -15,7 +15,8 @@ h1, h2 {
 .best-presentation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 3em;
 }
 
 .best-description {

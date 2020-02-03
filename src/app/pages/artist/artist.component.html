@@ -1,14 +1,16 @@
 <app-navbar></app-navbar>
 <div class="main-container">
   <h1>ARTISTE DU MOMENT</h1>
+  <app-best-artist [artist]="bestArtist"></app-best-artist>
   <div class="best-presentation">
-    <app-best-artist [artist]="bestArtist"></app-best-artist>
-    <!-- <iframe src="{{videoURL()}}" frameborder="0" allow="accelerometer;
+    <iframe [src]="videoURL()" frameborder="0" allow="accelerometer;
       autoplay; encrypted-media; gyroscope;
       picture-in-picture" allowfullscreen>
-  </iframe> -->
+    </iframe>
     <div class="best-description">
       <h4> {{bestArtist.description}} </h4>
+    </div>
+    <div>
       <button class="vote"> {{bestArtist.nbVote}} votes</button>
     </div>
   </div>

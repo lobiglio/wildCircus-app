@@ -29,15 +29,23 @@ export class ArtistComponent implements OnInit {
     });
   }
 
-  // videoURL() {
-  //   return this.sanitizer.bypassSecurityTrustResourceUrl(this.bestArtist.videoUrl);
-  // }
+  videoURL() {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.bestArtist.videoUrl);
+  }
 
   artistCliqued(artist: Artist) {
     this.showArtist = artist;
   }
 
   addVote() {
-
+    this.showArtist.nbVote += 1;
+    this.artistService.update(this.showArtist).subscribe();
+    this.artistService.getByVotes().subscribe((artistsByVote) => {
+      this.artistsByVote = artistsByVote;
+      this.bestArtist = artistsByVote[0];
+    });
+    this.artistService.getAll().subscribe((artists) => {
+      this.artists = artists;
+    });
   }
 }
