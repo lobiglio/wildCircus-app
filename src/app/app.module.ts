@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { ArtistComponent } from './pages/artist/artist.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { BestArtistComponent } from './components/best-artist/best-artist.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomepageComponent,
     FooterComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    BestArtistComponent
   ],
   imports: [
     BrowserModule,

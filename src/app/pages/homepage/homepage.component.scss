@@ -45,34 +45,6 @@ section {
   }
 }
 
-.artist-moment {
-  margin: 0 auto 2em auto;
-  text-align: center;
-  img {
-    box-shadow: 3px 3px 3px $gold;
-    border: 1px solid $gold;
-    border-radius: 12px;
-    width: 30em;
-    height: 22em;
-    object-fit: cover;
-    margin-bottom: 1em;
-  }
-  img:hover {
-    box-shadow: 3px 3px 3px $orange;
-    border: 1px solid $orange;
-
-  }
-  h2 {
-    font-weight: bold;
-    color: $gold;
-    text-shadow: 1px 1px 1px $red;
-    font-size: 2.5em;
-  }
-  h2:hover {
-    color: $orange;
-  }
-}
-
 .presentation-artist {
   color: $red;
   text-shadow: 1px 1px 1px $gold;
